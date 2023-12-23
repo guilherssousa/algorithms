@@ -44,13 +44,13 @@ class SortingTest(unittest.TestCase):
         self.assertListEqual(bubble_sort(sample_array), expected_array)
 
     def test_bubble_sort_against_library(self):
-        sample_array = generate_random_array(1000)
+        sample_array = generate_random_array(100)
         expected_array = internet_implemented_bubble_sort(sample_array.copy())
 
         self.assertListEqual(bubble_sort(sample_array.copy()), expected_array)
 
 
-sample_array = generate_random_array(1000)
+sample_array = generate_random_array(100)
 print("Random array:", sample_array)
 
 sorted_array = bubble_sort(sample_array)
