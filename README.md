@@ -16,3 +16,4 @@ to appreciate it.
 - [Python Binary Search](python/binary-search.py)
 - [Go Bubble Sort](golang/bubble-sort.go)
 - [Go Insertion Sort](golang/insertion-sort.go)
+- [Go Binary Search](golang/binary-search.go)
