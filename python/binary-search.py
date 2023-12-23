@@ -22,8 +22,6 @@ sample = [3, 7, 9, 11, 12, 15, 16, 18, 20]
 
 index = binary_search(sample, 7)
 
-print(index)
-
 
 class SearchTest(unittest.TestCase):
     def test_binary_search(self):
