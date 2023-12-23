@@ -7,8 +7,10 @@ to appreciate it.
 ## Languages done
 
 - [Python](python/)
+- [Go](golang/)
 
 ## Algorithms implemented
 
-- [Bubble Sort](bubble-sort.py)
-- [Binary Search](binary-search.py)
+- [Python Bubble Sort](python/bubble-sort.py)
+- [Go Bubble Sort](golang/bubble-sort.go)
+- [Binary Search](python/binary-search.py)
