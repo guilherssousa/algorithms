@@ -6,7 +6,7 @@ to appreciate it.
 
 ## Languages done
 
-- Python
+- [Python](python/)
 
 ## Algorithms implemented
 
