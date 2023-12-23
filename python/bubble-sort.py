@@ -1,5 +1,6 @@
-import random
 import unittest
+
+from utils import generate_random_array
 
 
 def internet_implemented_bubble_sort(arr):
@@ -24,15 +25,6 @@ def internet_implemented_bubble_sort(arr):
             # if we haven't needed to make a single swap, we
             # can just exit the main loop.
             return arr
-    return arr
-
-
-def generate_random_array(length):
-    arr = []
-
-    for _ in range(length):
-        arr.append(random.randint(0, length))
-
     return arr
 
 

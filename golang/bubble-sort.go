@@ -1,13 +1,9 @@
 package main
 
 import (
+	"algo/utils"
 	"fmt"
-	"math/rand"
 )
-
-func generateRandomArray(length int) []int {
-	return rand.Perm(length)
-}
 
 func bubbleSort(arr []int) []int {
 	swap := false
@@ -29,7 +25,7 @@ func bubbleSort(arr []int) []int {
 }
 
 func main() {
-	randomArray := generateRandomArray(100)
+	randomArray := utils.GenerateRandomArray(100)
 	fmt.Println("Random Array:", randomArray)
 	sorted := bubbleSort(randomArray)
 	fmt.Println("Sorted Array:", sorted)
