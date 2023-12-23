@@ -12,5 +12,7 @@ to appreciate it.
 ## Algorithms implemented
 
 - [Python Bubble Sort](python/bubble-sort.py)
+- [Python Insertion Sort](python/insertion-sort.py)
+- [Python Binary Search](python/binary-search.py)
 - [Go Bubble Sort](golang/bubble-sort.go)
-- [Binary Search](python/binary-search.py)
+- [Go Insertion Sort](golang/insertion-sort.go)
