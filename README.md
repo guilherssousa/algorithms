@@ -8,6 +8,7 @@ to appreciate it.
 
 - [Python](python/)
 - [Go](golang/)
+- [Javascript](javascript/)
 
 ## Algorithms implemented
 
@@ -17,3 +18,4 @@ to appreciate it.
 - [Go Bubble Sort](golang/bubble-sort.go)
 - [Go Insertion Sort](golang/insertion-sort.go)
 - [Go Binary Search](golang/binary-search.go)
+- [Javascript Bubble Sort](javascript/bubble_sort.js)
