@@ -6,17 +6,20 @@ import (
 )
 
 func bubbleSort(arr []int) []int {
-	swap := false
+	if len(arr) == 1 {
+		return arr
+	}
 
+	swap := false
 	for i := 0; i < len(arr); i++ {
 		for j := 0; j < len(arr)-i-1; j++ {
 			if arr[j] > arr[j+1] {
-				swap = true
 				arr[j], arr[j+1] = arr[j+1], arr[j]
+				swap = true
 			}
 		}
 
-		if swap == false {
+		if swap != true {
 			return arr
 		}
 	}
