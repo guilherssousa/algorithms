@@ -1,8 +1,4 @@
-function generate_sample_array(size = 30) {
-  return Array.from({ length: size }).map(() =>
-    Math.floor(Math.random() * 100),
-  );
-}
+import { generate_sample_array } from "./utils.js";
 
 export default function bubble_sort(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -16,7 +12,7 @@ export default function bubble_sort(arr) {
   }
 }
 
-const sample = generate_sample_array();
-console.log("Before sort:", sample);
+const sample = generate_sample_array(process.argv[2] || 30);
+console.time("sort");
 bubble_sort(sample);
-console.log("After sort:", sample);
+console.timeEnd("sort");

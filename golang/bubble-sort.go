@@ -3,6 +3,9 @@ package main
 import (
 	"algo/utils"
 	"fmt"
+	"os"
+	"strconv"
+	"time"
 )
 
 func bubbleSort(arr []int) []int {
@@ -28,8 +31,22 @@ func bubbleSort(arr []int) []int {
 }
 
 func main() {
-	randomArray := utils.GenerateRandomArray(100)
-	fmt.Println("Random Array:", randomArray)
-	sorted := bubbleSort(randomArray)
-	fmt.Println("Sorted Array:", sorted)
+	sample_size := 100
+	if len(os.Args) > 1 {
+		size, err := strconv.Atoi(os.Args[1])
+		if err != nil {
+			fmt.Errorf("you did some shit", err)
+		}
+		sample_size = size
+	}
+
+	randomArray := utils.GenerateRandomArray(sample_size)
+
+	start := time.Now()
+	bubbleSort(randomArray)
+	end := time.Now()
+
+	elapsed := end.Sub(start)
+
+	fmt.Printf("Elapsed time: %v\n", elapsed)
 }
