@@ -18,9 +18,7 @@ local partition = function(table, lo, hi)
 	for i = lo, hi do
 		if table[i] < pivot then
 			index = index + 1
-			local tmp = table[i]
-			table[i] = table[index]
-			table[index] = tmp
+			table[i], table[index] = table[index], table[i]
 		end
 	end
 

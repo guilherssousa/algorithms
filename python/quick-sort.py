@@ -21,9 +21,7 @@ def partition(list, lo, hi):
     for i in range(lo, hi):
         if list[i] <= pivot:
             index += 1
-            tmp = list[i]
-            list[i] = list[index]
-            list[index] = tmp
+            list[i], list[index] = list[index], list[i]
 
     index += 1
     list[hi] = list[index]
